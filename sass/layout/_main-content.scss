@@ -17,4 +17,7 @@
     font-size: 30vh;
     opacity: .7;
   }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }

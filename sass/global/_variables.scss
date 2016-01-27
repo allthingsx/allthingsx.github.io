@@ -1,5 +1,4 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables
 // -----------------------------------------------------------------------------
-$padding-lr: .7em;
-$padding-tb: .3em;
+$padding: $base-font-size ($base-font-size * 1.3);
