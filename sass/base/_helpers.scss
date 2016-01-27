@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes. (clearfix // container)
+// -----------------------------------------------------------------------------
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: $base-font-size;
+}
