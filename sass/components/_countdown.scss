@@ -1,0 +1,84 @@
+.clock {
+  width: 100%;
+  height: 100%;
+  padding: $padding-tb*2 $padding-lr*2;
+}
+
+.time {
+  height: 100%;
+  width: 100%;
+  font-size: $base-font-size*5;
+  display: flex;
+  justify-content: space-between;
+
+  > li {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.seconds {
+  position: relative;
+  &::after {
+    content: "seconds";
+    position: absolute;
+    top: $base-font-size*5;
+    font-size: $base-font-size;
+    color: $grey;
+    opacity: 0.5;
+  }
+}
+
+.minutes {
+  position: relative;
+  &::after {
+    content: "minutes";
+    position: absolute;
+    top: $base-font-size*5;
+    font-size: $base-font-size;
+    color: $grey;
+    opacity: 0.5;
+  }
+}
+
+.hours {
+  position: relative;
+  &::after {
+    content: "hours";
+    position: absolute;
+    top: $base-font-size*5;
+    font-size: $base-font-size;
+    color: $grey;
+    opacity: 0.5;
+  }
+}
+
+.days {
+  position: relative;
+  &::after {
+    content: "days";
+    position: absolute;
+    top: $base-font-size*5;
+    font-size: $base-font-size;
+    color: $grey;
+    opacity: 0.5;
+  }
+}
+
+
+/*
+@keyframes opacity {
+  50% { transform: scale(1.05); opacity:1; }
+}
+*/

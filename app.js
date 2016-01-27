@@ -21,10 +21,12 @@ function initializeDoomsday(id, doomsday) {
   var clock = document.getElementById(id);
   var timeInterval = setInterval(function() {
     var t = countdownToDoomsday(doomsday);
-    clock.innerHTML = 'days: ' + t.days + '<br>' +
-                      'hours: ' + t.hours + '<br>' +
-                      'minutes: ' + t.minutes + '<br>' +
-                      'seconds: ' + t.seconds;
+    clock.innerHTML =
+    '<ul class="time">' +
+      '<li class="days">' + t.days +
+      '<li class="hours">' + t.hours +
+      '<li class="minutes">' + t.minutes +
+      '<li class="seconds">' + t.seconds + '</ul>';
     if (t.total <= 0) {
       clearInterval(timeInterval);
     }

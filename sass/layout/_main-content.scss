@@ -1,6 +1,20 @@
 .main-content {
   flex-grow: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.x {
+  font-family: Helvetica;
+  opacity: 0.1;
+  position: absolute;
+  font-size: 20vh;
+  left:50%;
+  top: 20%;
+  transform: translate(-50%, -40%);
+  &:hover {
+    font-size: 30vh;
+    opacity: .7;
+  }
 }
