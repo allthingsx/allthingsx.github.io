@@ -5,17 +5,18 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: $black;
+  background-color: $magenta;
 }
 
 body {
-  font-size: $base-font-size;
-  font-family: $font-family;
-  color: $white;
+  font-size: $font-size--body;
+  font-weight: bold;
+  font-family: 'futura-pt';
+  color: $black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 * {

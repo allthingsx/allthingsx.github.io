@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
-$browser-context: 16;
+$browser-context: 16px;
 
 @function em($pixels, $context: $browser-context) {
   @return ($pixels / $context) * 1em;

@@ -1,25 +1,35 @@
 .main-content {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.x {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  opacity: .1;
-  font-family: Helvetica;
-  font-size: 20vh;
-  
-  &:hover {
-    opacity: .7;
-    font-size: 30vh;
+.logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 50%;
+  width: 100%;
+
+  img {
+    height: 90%;
+    text-align: right;
   }
 
-  @media screen and (max-width: 700px) {
-    display: none;
+  p {
+    font-size: em(42px);
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      padding-top: $font-size--body;
+    }
+
+    img {
+      padding-top: $font-size--body;
+    }
   }
 }
