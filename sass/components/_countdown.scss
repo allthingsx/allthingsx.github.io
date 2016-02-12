@@ -5,21 +5,23 @@
 }
 
 .time {
-  height: 100%;
-  width: 100%;
-  font-size: $large-font;
   display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: $large-font;
   justify-content: center;
   flex-wrap: wrap;
+
   > li {
+    display: flex;
     width: 25%;
     min-width: 200px;
-    display: flex;
+    margin: .5em 0;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0.5em 0;
-    &:hover{
+    
+    &:hover {
       transform: scale(1.2);
     }
   }
@@ -27,61 +29,65 @@
   @media screen and (max-width: 700px) {
     flex-direction: column;
     align-items: center;
+
     li {
+      margin: .3em 0;
       font-size: 1.5em;
-      margin: 0.3em 0;
     }
   }
 }
 
 .seconds {
   position: relative;
+  
   &::after {
-    content: "seconds";
     position: absolute;
-    font-size: 1rem;
-    color: $grey;
-    opacity: 0.5;
     bottom: -1em;
+    content: 'seconds';
+    opacity: .5;
+    color: $grey;
+    font-size: 1rem;
   }
 }
 
 .minutes {
   position: relative;
+  
   &::after {
-    content: "minutes";
     position: absolute;
-    font-size: 1rem;
-    color: $grey;
     bottom: -1em;
-    opacity: 0.5;
+    content: 'minutes';
+    opacity: .5;
+    color: $grey;
+    font-size: 1rem;
   }
 }
 
 .hours {
   position: relative;
+  
   &::after {
-    content: "hours";
     position: absolute;
-    font-size: 1rem;
-    color: $grey;
-    opacity: 0.5;
     bottom: -1em;
+    content: 'hours';
+    opacity: .5;
+    color: $grey;
+    font-size: 1rem;
   }
 }
 
 .days {
   position: relative;
+  
   &::after {
-    content: "days";
     position: absolute;
-    font-size: 1rem;
-    color: $grey;
-    opacity: 0.5;
     bottom: -1em;
+    content: 'days';
+    opacity: .5;
+    color: $grey;
+    font-size: 1rem;
   }
 }
-
 
 /*
 @keyframes opacity {
